@@ -101,6 +101,17 @@ sudo apt-get install g++ make
 4- Run the executable file
 
 ## Input Format
+
+Eg:
+trace             <-- Line 1: Output type (trace or stats)
+1                 <-- Line 2: Algorithms to run (1 means FCFS)
+20                <-- Line 3: Simulation duration (last instant is 20)
+5                 <-- Line 4: Number of processes
+A,0,3             <-- Line 5: Process 1 details (Name, Arrival, Service/Priority)
+B,2,6             <-- Line 6: Process 2 details
+C,4,4             <-- Line 7: Process 3 details
+D,6,5             <-- Line 8: Process 4 details
+E,8,2             <-- Line 9: Process 5 details
 - Line 1: "trace" or "stats"
 - Line 2: a comma-separated list telling which CPU scheduling policies to be analyzed/visualized along with
 their parameters, if applicable. Each algorithm is represented by a number as listed in the
